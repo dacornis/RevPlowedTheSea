@@ -1,0 +1,46 @@
+
+state={
+	id=375
+	name="STATE_375"
+	resources={
+		oil=320.000
+		aluminium=50.000
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 9
+			air_base = 3
+			10337 = {
+				naval_base = 3
+
+			}
+			6785 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MEX
+		victory_points = {
+			10337 10 
+		}
+		victory_points = {
+			3960 10 
+		}
+		victory_points = {
+			12782 1 
+		}
+
+	}
+
+	provinces={
+		805 1500 1915 1927 2019 2042 2082 3960 4577 4884 5001 5022 5085 6798 6968 6987 7628 7836 7981 8064 9829 9920 10337 10504 10778 10861 12341 12410 12486 12728 12782 12875 
+	}
+	manpower=5824712
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=9.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=490
+	name="STATE_490"
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = COL
+
+	}
+
+	provinces={
+		8149 10942 12869 
+	}
+	manpower=70020
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

@@ -1,0 +1,74 @@
+﻿capital = 303
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+}
+
+recruit_character = BOL_josé_luis_tejada_sorzano
+recruit_character = BOL_Óscar_Únzaga_de_la_vega
+recruit_character = BOL_jorge_blanco
+recruit_character = BOL_severino_ruíztagle
+recruit_character = BOL_eusebio_ayala
+recruit_character = BOL_tomas_monje_gutierrez
+recruit_character = BOL_gil_ibarra_juarez
+recruit_character = BOL_gualberto_villarroel_lopez
+recruit_character = BOL_jose_santos_quinteros
+recruit_character = BOL_fabian_vaca_chavez
+recruit_character = BOL_david_toro_ruilova
+recruit_character = BOL_enrique_baldivieso_aparicio
+recruit_character = BOL_roberto_hinojosa
+recruit_character = BOL_carlos_altamirano
+recruit_character = BOL_julian_montellano_carrasco
+recruit_character = BOL_hector_bilbao_roja
+recruit_character = BOL_alberto_ostria_gutierrez
+recruit_character = BOL_enrique_finot
+recruit_character = BOL_german_busch_beccera
+recruit_character = BOL_jose_maria_gutierrez
+recruit_character = PRU_Óscar_benavides
+recruit_character = PRU_sebastián_lynch
+recruit_character = PRU_hilarión_lynch
+recruit_character = PRU_santiago_ruíztagle
+recruit_character = PRU_rafael_escardo
+recruit_character = PRU_alberto_lopez_flores
+recruit_character = PRU_oscar_gilardi
+recruit_character = PRU_felipe_tudela
+recruit_character = PRU_eduardo_cantabria_gomez
+recruit_character = PRU_ernesto_scroth
+recruit_character = PRU_luis_ramirez_ortiz
+recruit_character = PRU_oscar_benavides_larrea
+recruit_character = PRU_manuel_odria_amoretti
+recruit_character = PRU_luis_navarrete
+recruit_character = PRU_paul_de_beaudiez
+recruit_character = PRU_alberto_roque_saldias
+recruit_character = PRU_vladimiro_lopez_trigoso
+recruit_character = PRU_eloy_g_ureta
+recruit_character = PRU_fernando_m_quesada_blanco
+recruit_character = PRU_eduardo_montero_rojas
+recruit_character = PRU_romulo_frias
+recruit_character = PRU_oscar_miro_quesada
+recruit_character = PRU_jose_bustamante_y_rivero
+recruit_character = PRU_armando_reveredo_iglesias
+recruit_character = PRU_reynaldo_vinatea
+
+
+set_country_flag = monroe_doctrine
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.10.11"
+	election_frequency = 96
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 49
+	neutrality = 51
+}

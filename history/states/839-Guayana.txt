@@ -1,0 +1,20 @@
+state={
+	id=839
+	name="STATE_839"
+	provinces={
+		8107 12716 
+	}
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COL
+
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=5.000
+}

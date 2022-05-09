@@ -1,0 +1,27 @@
+
+state={
+	id=688
+	name="STATE_688"
+	resources={
+		tungsten=3.000
+		steel=2.000
+	}
+
+	history={
+		owner = PBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PBC
+
+	}
+
+	provinces={
+		5165 8203 10973 
+	}
+	manpower=45900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

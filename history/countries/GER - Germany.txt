@@ -1,0 +1,326 @@
+﻿capital = 64
+
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+# starting_truck_buffer = 0.8
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+	basic_train = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+set_variable = { var = ger_gateway_to_europe_influence value = 0 }
+
+set_variable = { var = wehrmacht_anger value = 0 }
+set_variable = { var = ss_anger value = 0 }
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 
+set_war_support = 0.3
+
+#Trade
+create_import = {
+		resource = tungsten
+		factories = 1
+		exporter = SWE
+}
+
+1939.1.1 = {
+	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
+	set_war_support = 0.7
+
+	add_political_power = 1197
+	add_command_power = 100
+	
+	#adding ministers
+	add_ideas = {
+		henschel
+		ig_faben
+		heinrich_himmler
+		rudolf_hess
+		ludwig_beck
+		gerd_von_rundstedt
+		GER_autarky_idea
+
+		#laws
+		war_economy
+		extensive_conscription
+	}
+	
+	
+	
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_puppet
+	}
+	
+	give_military_access = SLO
+	create_wargoal = {
+		type = take_state_focus
+		target = POL
+		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
+	}
+
+#Trade
+	create_import = {
+			resource = oil
+			factories = 2
+			exporter = SOV
+	}
+
+	#MR pact effect, Also has a part scripted in soviet history file
+	unlock_national_focus = GER_mol_rib_pact
+	every_other_country = {
+		limit = {
+			has_government = fascism 
+		}
+		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
+	}
+	diplomatic_relation = { country = SOV relation = non_aggression_pact }
+	add_opinion_modifier = { target = SOV modifier = MR_pact }
+	#MR pact end
+
+	#Soviet treaty
+	unlock_national_focus = GER_soviet_treaty
+	add_tech_bonus = {
+		bonus = 1.0
+		uses = 2
+		category = armor
+	}
+	SOV = {
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
+		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
+	}
+	#Soviet treaty end
+	
+	unlock_national_focus = GER_rhineland
+	unlock_national_focus = GER_anschluss
+	unlock_national_focus = GER_demand_sudetenland
+	unlock_national_focus = GER_first_vienna_award
+	unlock_national_focus = GER_end_of_czechoslovakia
+	unlock_national_focus = GER_demand_memel
+	unlock_national_focus = GER_four_year_plan
+	unlock_national_focus = GER_autarky
+	unlock_national_focus = GER_synthetic_rubber
+
+	set_global_flag = end_of_czechoslovakia
+	set_global_flag = olympics_1936
+	set_variable = { var = GER_mefo_bill_counter value = 90 }
+	complete_national_focus = GER_autobahn
+	complete_national_focus = GER_west_wall
+	complete_national_focus = GER_army_innovation
+	complete_national_focus = GER_hermann_goring_werke
+	complete_national_focus = GER_kdf_wagen
+	complete_national_focus = GER_coal_liquidization
+	complete_national_focus = GER_extra_tech_slot
+
+	#BUILDINGS
+	
+
+	set_technology = {
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+
+	}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	neutrality = 60
+	communism = 20
+}
+
+create_faction = Mitteleuropa
+add_to_faction = GER
+
+
+add_ideas = {
+	sour_loser
+	general_staff
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
+add_ideas = GER_mefo_bills_1
+
+activate_mission = GER_mefo_bills_mission
+
+recruit_character = GER_wilhelm_pieck
+recruit_character = GER_konrad_adenauer
+recruit_character = GER_adolf_hitler
+recruit_character = GER_albert_kesselring
+recruit_character = GER_alfred_jodl
+recruit_character = GER_alfred_saalwachter
+recruit_character = GER_erhard_milch
+recruit_character = GER_erich_bey
+recruit_character = GER_erich_raeder
+recruit_character = GER_erich_von_manstein
+recruit_character = GER_ernst_udet
+recruit_character = GER_ernsteberhard_hell
+recruit_character = GER_erwin_rommel
+recruit_character = GER_erwin_von_witzleben
+recruit_character = GER_ewald_von_kleist
+recruit_character = GER_fedor_von_bock
+recruit_character = GER_felix_steiner
+recruit_character = GER_ferdinand_schorner
+recruit_character = GER_franz_halder
+recruit_character = GER_friedrich_paulus
+recruit_character = GER_friedrich_schulz
+recruit_character = GER_georg_von_kuchler
+recruit_character = GER_georghans_reinhardt
+recruit_character = GER_gerd_von_rundstedt
+recruit_character = GER_hermann_goring
+recruit_character = GER_gotthard_heinrici
+recruit_character = GER_gunther_lutjens
+recruit_character = GER_gunther_von_kluge
+recruit_character = GER_hasso_von_manteuffel
+recruit_character = GER_heinz_guderian
+recruit_character = GER_heisenberg
+recruit_character = GER_hermann_boehm
+recruit_character = GER_hermann_hoth
+recruit_character = GER_hugo_sperrle
+recruit_character = GER_johannes_blaskowitz
+recruit_character = GER_karl_donitz
+recruit_character = GER_kurt_student
+recruit_character = GER_ludwig_beck
+recruit_character = GER_maximilian_von_weichs
+recruit_character = GER_otto_ciliax
+recruit_character = GER_paul_hausser
+recruit_character = GER_ritter_von_greim
+recruit_character = GER_sepp_dietrich
+recruit_character = GER_viktor_schutze
+recruit_character = GER_von_braun
+recruit_character = GER_walter_kruger
+recruit_character = GER_walter_model
+recruit_character = GER_walther_von_brauchitsch
+recruit_character = GER_walther_wever
+recruit_character = GER_werner_von_fritsch
+recruit_character = GER_wilhelm_keitel
+recruit_character = GER_wilhelm_list
+recruit_character = GER_wilhelm_marschall
+
+recruit_character = GER_wilhelm_ritter_von_leeb
+recruit_character = GER_wolfram_von_richthofen
+
+recruit_character = GER_heinrich_himmler
+recruit_character = GER_walther_funk
+recruit_character = GER_hjalmar_schacht
+recruit_character = GER_julius_leber
+recruit_character = GER_albert_speer
+recruit_character = GER_hans_oster
+recruit_character = GER_theodor_heuss
+recruit_character = GER_fritz_todt
+recruit_character = GER_joachim_von_ribbentrop
+recruit_character = GER_ernst_thalmann
+recruit_character = GER_rudolf_hess
+recruit_character = GER_martin_bormann
+recruit_character = GER_wilhelm_canaris
+recruit_character = GER_joseph_goebbels
+recruit_character = GER_konstantin_von_neurath
+recruit_character = GER_alfred_hugenberg
+recruit_character = GER_kurt_schumacher
+recruit_character = GER_wilhelm_ii
+recruit_character = GER_wilhelm_iii
+recruit_character = GER_victoria
+recruit_character = GER_august_von_mackensen
+
+recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
+
+create_equipment_variant = {
+	name = "Ju 86"
+	type = tac_bomber_equipment_0
+	upgrades = {
+		plane_tac_bomb_upgrade = 5
+		plane_range_upgrade = 5
+		plane_engine_upgrade = 5
+		plane_reliability_upgrade = 5
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Do 17"
+	type = tac_bomber_equipment_0
+	upgrades = {
+		plane_tac_bomb_upgrade = 5
+		plane_range_upgrade = 1
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 5
+	}
+	obsolete = yes
+}

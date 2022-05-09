@@ -1,0 +1,101 @@
+﻿capital = 522
+
+set_stability = 0.8
+set_war_support = 0.3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	basic_train = 1
+	trench_warfare = 1
+	fuel_silos = 1
+
+	fleet_in_being = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+recruit_character = AST_john_curtin
+recruit_character = AST_eric_campbell
+recruit_character = AST_richard_dixon
+recruit_character = AST_earle_page
+recruit_character = AST_rod_hull
+recruit_character = AST_leslie_morshead
+recruit_character = AST_thomas_blamey
+recruit_character = AST_henry_wynter
+recruit_character = AST_alan_vasey
+recruit_character = AST_horace_robertson
+recruit_character = AST_john_northcott
+recruit_character = AST_harold_farncomb
+recruit_character = AST_victor_crutchley
+recruit_character = AST_clive_caldwell
+recruit_character = AST_sydney_rowell
+recruit_character = AST_richard_williams
+recruit_character = AST_ragnar_colvin
+recruit_character = AST_norman_makin
+recruit_character = AST_james_fairbairn
+recruit_character = AST_john_collins
+recruit_character = AST_arthur_allen
+recruit_character = AST_vernon_sturdee
+recruit_character = AST_jack_crace
+recruit_character = AST_cederic_hicks
+recruit_character = AST_charles_burnett
+recruit_character = AST_edmund_herring
+recruit_character = AST_arthur_drakeford
+recruit_character = AST_john_lavarack
+recruit_character = AST_robert_g_menzies
+recruit_character = AST_ben_chifley
+recruit_character = AST_frank_forde
+recruit_character = AST_alexander_hore_ruthven
+recruit_character = AST_jack_beasley
+recruit_character = AST_lance_sharkey
+recruit_character = AST_herbert_v_evatt
+recruit_character = AST_generic_fascist_demagogue
+recruit_character = AST_arthur_calwell
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.9.15"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 98
+	communism = 2
+}
+
+set_convoys = 100
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1937.10.23"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		democratic = 99
+		communism = 1
+	}
+
+	set_convoys = 100
+}
