@@ -1,0 +1,16 @@
+
+state={
+	id=390
+	name="STATE_390"
+
+	history={
+		owner = MEX
+		add_core_of = MEX
+	}
+
+	provinces={
+		13252 
+	}
+	manpower=0
+	local_supplies=0.000
+}

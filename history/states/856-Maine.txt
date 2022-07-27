@@ -1,0 +1,14 @@
+state={
+	id=856
+	name="STATE_856"
+	provinces={
+		1282 1338 1619 3732 6719 7462 10318 12202 12221 12459 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

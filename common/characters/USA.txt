@@ -1,0 +1,14 @@
+characters={
+	USA_henry_a_wallace={
+		name="Henry A. Wallace"
+		portraits={
+			civilian={
+				large=GFX_portrait_USA_henry_a_wallace
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+		}
+	}
+}

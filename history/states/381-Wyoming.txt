@@ -4,20 +4,13 @@ state={
 	name="STATE_381"
 
 	history={
-		owner = USA
-		buildings = {
-			infrastructure = 2
-
-		}
-		add_core_of = USA
-
+		owner = MEX
+		add_core_of = MEX
 	}
 
 	provinces={
-		1815 4610 4723 4794 4820 7814 10640 10711 12651 
+		8089 13246 13247 13253 13262 
 	}
-	manpower=225564
-	buildings_max_level_factor=1.000
-	state_category=rural
+	manpower=0
 	local_supplies=0.000
 }

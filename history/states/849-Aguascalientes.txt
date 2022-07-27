@@ -1,0 +1,14 @@
+state={
+	id=849
+	name="STATE_849"
+	provinces={
+		10172 
+	}
+	history={
+		owner = MEX
+		add_core_of = MEX
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,14 @@
+state={
+	id=857
+	name="STATE_857"
+	provinces={
+		6909 9832 9847 9850 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
