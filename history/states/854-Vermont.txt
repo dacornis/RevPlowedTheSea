@@ -9,7 +9,8 @@ state={
 		owner = USA
 		add_core_of = USA
 	}
-	manpower=0
+	manpower=10000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
+	state_category=rural
 }

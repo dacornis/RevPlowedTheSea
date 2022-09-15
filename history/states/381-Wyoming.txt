@@ -11,6 +11,7 @@ state={
 	provinces={
 		8089 13246 13247 13253 13262 
 	}
-	manpower=0
+	manpower=10000
+	state_category=rural
 	local_supplies=0.000
 }

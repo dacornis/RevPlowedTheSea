@@ -1,0 +1,15 @@
+state={
+	id=860
+	name="STATE_860"
+	provinces={
+		11465 11616 
+	}
+	history={
+		owner = BRI
+		add_core_of = BRI
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

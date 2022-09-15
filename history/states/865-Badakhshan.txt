@@ -1,0 +1,15 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		8027 10417 12805 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

@@ -7,14 +7,14 @@ state={
 	}
 
 	history={
-		owner = CHL
+		owner = PBC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 
 		}
-		add_core_of = CHL
+		add_core_of = PBC
 		victory_points = {
 			2210 1 
 		}
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		2210 5202 13086 
+		2210 5202 
 	}
 	manpower=1601278
 	buildings_max_level_factor=1.000
